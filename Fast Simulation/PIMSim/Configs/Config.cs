@@ -11,6 +11,7 @@ using PIMSim.PIM;
 using PIMSim.Memory.DDR;
 using PIMSim.Statistics;
 using PIMSim.Memory;
+using System.Diagnostics;
 
 #endregion
 
@@ -405,6 +406,7 @@ namespace PIMSim.Configs
         {
             try
             {
+                //string cur_dir = System.IO.Directory.GetCurrentDirectory();
                 FileStream fs = new FileStream(config_file, FileMode.Open);
                 StreamReader sr = new StreamReader(fs);
                 string line = "";

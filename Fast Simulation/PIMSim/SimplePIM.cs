@@ -184,22 +184,23 @@ namespace PIMSim.General
             }
             for (int i = 0; i < args.Count(); i += 2)
             {
+                string cur_dir = System.IO.Directory.GetCurrentDirectory();
                 string command = args[i].Replace("-", "");
                 if (command.Equals("trace", StringComparison.OrdinalIgnoreCase) || command.Equals("t"))
                 {
-                    Config.trace_path = args[i + 1];
+                    Config.trace_path = cur_dir + args[i + 1];
                 }
                 else
                 {
                     if (command.Equals("config", StringComparison.OrdinalIgnoreCase))
                     {
-                        Config.config_path = args[i + 1];
+                        Config.config_path = cur_dir + args[i + 1];
                     }
                     else
                     {
                         if (command.Equals("output", StringComparison.OrdinalIgnoreCase) || command.Equals("o"))
                         {
-                            Config.output_file = args[i + 1];
+                            Config.output_file = cur_dir + args[i + 1];
                         }
                         else
                         {
@@ -215,7 +216,8 @@ namespace PIMSim.General
                                     Config.sim_cycle = UInt64.Parse(args[i + 1]);
                                 }
                                 Usage();
-                                Environment.Exit(1);
+                                //EDITED BY BRIAN
+                                //Environment.Exit(1);
                             }
                         }
                     }
