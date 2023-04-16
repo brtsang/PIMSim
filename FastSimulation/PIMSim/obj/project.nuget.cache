@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fk/vxI7Uv4oWOiwQkPGgsrfw4yoXpwn8fBK/d2s+d/2NCYjQNaq1HU2gPMbX5kHlmXMS6p5u9G4Q9wVmJCwY7w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Brian\\Documents\\DCSProj\\PIMSim\\FastSimulation\\PIMSim\\PIMSim.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Brian\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Brian\\.nuget\\packages\\microsoft.dotnet.upgradeassistant.extensions.default.analyzers\\0.4.410601\\microsoft.dotnet.upgradeassistant.extensions.default.analyzers.0.4.410601.nupkg.sha512",
+    "C:\\Users\\Brian\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

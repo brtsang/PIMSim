@@ -1,0 +1,14 @@
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\obj\Debug\net7.0\PIMSim.csproj.AssemblyReference.cache
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\obj\Debug\net7.0\PIMSim.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\obj\Debug\net7.0\PIMSim.csproj.CoreCompileInputs.cache
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\bin\Debug\net7.0\PIMSim.exe
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\bin\Debug\net7.0\PIMSim.dll.config
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\bin\Debug\net7.0\PIMSim.deps.json
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\bin\Debug\net7.0\PIMSim.runtimeconfig.json
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\bin\Debug\net7.0\PIMSim.dll
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\bin\Debug\net7.0\PIMSim.pdb
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\obj\Debug\net7.0\PIMSim.dll
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\obj\Debug\net7.0\refint\PIMSim.dll
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\obj\Debug\net7.0\PIMSim.pdb
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\obj\Debug\net7.0\PIMSim.genruntimeconfig.cache
+C:\Users\Brian\Documents\DCSProj\PIMSim\FastSimulation\PIMSim\obj\Debug\net7.0\ref\PIMSim.dll

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>-t /examples/1cpu_1pu_cpu_pc/CPU0.trace -config /examples/1cpu_1pu_cpu_pc/ -o /examples/1cpu_1pu_cpu_pc/output.txt  -n 1 -c 1000</StartArguments>
+    <StartWorkingDirectory>C:\Users\Brian\Documents\DCS Proj\PIMSim\Fast Simulation\PIMSim\</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartArguments>-t examples/1cpu_1pu_cpu_pc/CPU0.trace -config examples/1cpu_1pu_cpu_pc/  -o examples/1cpu_1pu_cpu_pc/output.txt -n 1 -c 100</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PublishUrlHistory>publish\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>
