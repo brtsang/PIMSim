@@ -24,4 +24,8 @@
 
 ~$*
 *~
+*/obj/*
+*/bin/*
+*/Debug/*
+*/Release/*
 
