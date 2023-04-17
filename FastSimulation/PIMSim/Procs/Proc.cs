@@ -807,7 +807,8 @@ namespace PIMSim.Procs
             if (Config.trace_type == Trace_Type.PC)
             {
                 pc++;
-                Console.WriteLine(pc.ToString("x"));
+                if (Config.DEBUG_PC)
+                    DEBUG.WriteLine(pc.ToString("x"));
                 //if (curr_req.type != RequestType.NOP)
                 //{
                 //    if (pc > curr_req.pc)

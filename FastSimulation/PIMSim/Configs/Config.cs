@@ -34,7 +34,7 @@ namespace PIMSim.Configs
         /// writeback enable
         /// true: enable write-back mode   false :enable write-through mode
         /// </summary>
-        public static bool writeback = true;         
+        public static bool writeback = true;
 
         /// <summary>
         /// Block size
@@ -168,6 +168,7 @@ namespace PIMSim.Configs
 
         public static bool DEBUG_CACHE = true;
         public static bool DEBUG_TRACE = true;
+        public static bool DEBUG_PC = false;
         public static bool DEBUG_MTRL = true;
         public static bool DEBUG_COHERENCE = true;
         public static bool DEBUG_PROC = true;
@@ -464,7 +465,6 @@ namespace PIMSim.Configs
                                                 DEBUG.Error("Error in input Memory Type.");
                                                 Environment.Exit(2);
                                             }
-                                                
                                         }
                                     }
                                 }

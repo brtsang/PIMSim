@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using PIMSim.Configs;
 #endregion
 
 namespace PIMSim.Statistics
@@ -37,14 +38,11 @@ namespace PIMSim.Statistics
         /// <param name="s"></param>
         public static void WriteLine(string s="")
         {
-            if (sw == null)
-            {
-                Console.WriteLine( s);
-            }
+            if(!Config.DEBUG_TRACE) return;
+                if (sw == null)
+                    Console.WriteLine(s);
             else
-            {
-                sw.WriteLine( s);
-            }
+                sw.WriteLine(s);
         }
 
         /// <summary>
@@ -53,14 +51,11 @@ namespace PIMSim.Statistics
         /// <param name="s"></param>
         public static void Write(string s)
         {
-            if (sw == null)
-            {
-                Console.Write(s);
-            }
-            else
-            {
-                sw.Write(s);
-            }
+            if(!Config.DEBUG_TRACE) return;
+                if (sw == null)
+                    Console.Write(s);
+                else
+                    sw.Write(s);
         }
 
         /// <summary>
@@ -87,6 +82,6 @@ namespace PIMSim.Statistics
                 sw.WriteLine("ERROR: " + s);
             }
         }
-        #endregion
+#endregion
     }
 }

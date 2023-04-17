@@ -30,11 +30,9 @@ namespace PIMSim.TraceReader
         public bool SET_trace_path(string trace_file)
         {
 
-            if (Directory.Exists(trace_file))
-            {
+            if (Directory.Exists(trace_file)) {
 
-//                if (Config.DEBUG_TRACE)
-                    DEBUG.WriteLine("-- Trace Fetcher : Set Trace File Path : " + trace_file);
+                DEBUG.WriteLine("-- Trace Fetcher : Set Trace File Path : " + trace_file);
 
                 trace = new List<FileStream>(Config.N);
                 sr = new List<StreamReader>(Config.N);
