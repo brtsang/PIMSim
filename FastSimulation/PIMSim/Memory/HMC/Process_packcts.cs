@@ -34,7 +34,9 @@ namespace PIMSim.Memory.HMC
             UInt64[] rsp_payload = new UInt64[16];
 
             UInt32 cur = 0x00;
+            # pragma warning disable 0219
             UInt32 error = 0x00;
+            # pragma warning restore 0219
             UInt32 t_slot = this.queue_depth + 1;
             UInt32 j = 0x00;
             UInt32 length = 0x00;
@@ -142,6 +144,7 @@ namespace PIMSim.Memory.HMC
              */
 
             /* -- find a response slot */
+#pragma warning disable CS0162 // what the fuck.
             if (false)
             {
                 for (j = 0; j < this.queue_depth; j++)
@@ -153,6 +156,7 @@ namespace PIMSim.Memory.HMC
                     }
                 }
             }
+#pragma warning restore CS0162
             /* if our dram latency is set to zero, the logic should bypass
              * the bank delay, go ahead and find a response slot
              */
