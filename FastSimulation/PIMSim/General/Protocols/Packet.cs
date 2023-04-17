@@ -81,6 +81,7 @@ namespace PIMSim.General.Protocols
         public bool isUpgrade() { return cmd.isUpgrade(); }
         public bool isRequest() { return cmd.isRequest(); }
         public bool isResponse() { return cmd.isResponse(); }
+        public bool isSecure() { return _isSecure; }
         public bool needsWritable()
         {
             // we should never check if a response needsWritable, the
@@ -104,6 +105,8 @@ namespace PIMSim.General.Protocols
         public bool isError() { return cmd.isError(); }
         public bool isPrint() { return cmd.isPrint(); }
         public bool isFlush() { return cmd.isFlush(); }
+
+        public Address getAddress() { return this.address; }
 
         public void Print()
         {
