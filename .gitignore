@@ -34,3 +34,5 @@ tags
 *.csproj.user
 FastSimulation/PIMSim/Debug
 FastSimulation/PIMSim/Release
+FastSimulation/PIMSim/obj
+
