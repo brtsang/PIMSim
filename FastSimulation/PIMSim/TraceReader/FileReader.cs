@@ -33,7 +33,7 @@ namespace PIMSim.TraceReader
             if (Directory.Exists(trace_file))
             {
 
-                if (Config.DEBUG_TRACE)
+//                if (Config.DEBUG_TRACE)
                     DEBUG.WriteLine("-- Trace Fetcher : Set Trace File Path : " + trace_file);
 
                 trace = new List<FileStream>(Config.N);
@@ -46,6 +46,8 @@ namespace PIMSim.TraceReader
 
                 return true;
             }
+            Console.WriteLine("Trace File Path Error: ", trace_file);
+            if(Config.DEBUG_FAILEARLY) Environment.Exit(0);
             return false;
 
         }

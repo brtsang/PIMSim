@@ -176,6 +176,7 @@ namespace PIMSim.Configs
         public static bool DEBUG_PIM = true;
         public static bool DEBUG_INSP = true;
         public static bool DEBUG_MEMORY = true;
+        public static bool DEBUG_FAILEARLY = true;
 
         #endregion
 
