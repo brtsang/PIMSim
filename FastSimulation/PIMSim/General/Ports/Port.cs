@@ -11,7 +11,9 @@ namespace PIMSim.General.Ports
 {
     public class Port
     {
+        #pragma warning disable CS0414
         private PortID InvalidPortID = PortID.MaxValue;
+        #pragma warning restore CS0414
 
         /** Descriptive name (for DPRINTF output) */
         private string portName;
