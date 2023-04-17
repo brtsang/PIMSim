@@ -12,7 +12,9 @@ namespace PIMSim.Memory.DDR
 {
     public class Bank
     {
+        #pragma warning disable CS0414
         private List<DataStruct> rowEntries;
+        #pragma warning restore CS0414
         private Stream dramsim_log;
         public BankState currentState;
 
@@ -63,7 +65,7 @@ namespace PIMSim.Memory.DDR
                 //TODO: Optimize this data structure for speedier lookups?
                 newRowNode.row = (int)busPacket.row;
                 newRowNode.data = busPacket.data;
-            
+
                 rowEntries[(int)busPacket.column].AddFirst(newRowNode);
             }
             else
