@@ -26,7 +26,7 @@ namespace PIMSim.General
     /// </summary>
     public class PIMSimulator
     {
-        #region Public Methods
+#region Public Methods
 
         /// <summary>
         /// Instruction Partitioner
@@ -44,7 +44,7 @@ namespace PIMSim.General
         public Shared_Cache shared_cache;
         public PIM.PIM pim;
 
-        #endregion
+#endregion
         public PIMSimulator(string[] args)
         {
 
@@ -71,7 +71,6 @@ namespace PIMSim.General
             int count = 0;
             foreach(var item in Config.memory)
             {
-                
                 if (item.Key.Equals("HMC"))
                 {
                     var tp = new HMCMem(count++) as MemObject;
@@ -93,12 +92,9 @@ namespace PIMSim.General
                     }
                 }
             }
-            
             Mctrl.init_queue();
 
             PIMMctrl.init_queue();
- 
-         
             pim = new PIM.PIM(ref ins_p);
             Coherence.init();
             Coherence.linkproc(proc);
@@ -109,7 +105,6 @@ namespace PIMSim.General
         {
             PortManager.bind(ref trace.port, ref ins_p.ins_port);
             proc.ForEach(x => PortManager.bind(ref ins_p.data_port, ref x.ins_port));
-            
         }
         public void run()
         {
@@ -134,7 +129,6 @@ namespace PIMSim.General
                         proc[j].Step();
                 }
 
-
                 if (GlobalTimer.ifPIMUnitStep(0))
                     pim.Step();
 
@@ -147,22 +141,17 @@ namespace PIMSim.General
                     MemorySelector.MemoryInfo.ForEach(x => done = done && x.Item3.done());
                     if (done & ins_p.done() & Mctrl.done() & PIMMctrl.done())
                         return;
-                    
                 }
                 GlobalTimer.Step();
             }
 
         }
-        public void initAllconfigs(string[] args)
-        {
-
+        public void initAllconfigs(string[] args) {
             //before parsing args, overallconfig file should be initialed
             parse_args(args);
-
             Config.read_configs();
             Config.initial();
             PIMConfigs.initConfig();
-            
 
         }
         private void Usage()
@@ -186,47 +175,27 @@ namespace PIMSim.General
             {
                 string cur_dir = System.IO.Directory.GetCurrentDirectory();
                 string command = args[i].Replace("-", "");
-                if (command.Equals("trace", StringComparison.OrdinalIgnoreCase) || command.Equals("t"))
-                {
-                    Config.trace_path = cur_dir + args[i + 1];
+                if (command.Equals("trace", StringComparison.OrdinalIgnoreCase)
+                        || command.Equals("t")) {
+                            Config.trace_path = cur_dir + args[i + 1];
+                } else if (command.Equals("config", StringComparison.OrdinalIgnoreCase)) {
+                    Config.config_path = cur_dir + args[i + 1];
+                } else if (command.Equals("output", StringComparison.OrdinalIgnoreCase)
+                        || command.Equals("o", StringComparison.OrdinalIgnoreCase)) {
+                    Config.output_file = cur_dir + args[i + 1];
+                } else if (command.Equals("n", StringComparison.OrdinalIgnoreCase)) {
+                    Config.N = Int16.Parse(args[i + 1]);
+                } else if (command.Equals("c", StringComparison.OrdinalIgnoreCase)
+                        || command.Equals("cycle", StringComparison.OrdinalIgnoreCase)) {
+                    Config.sim_type = SIM_TYPE.cycle;
+                    Config.sim_cycle = UInt64.Parse(args[i + 1]);
+                } else {
+                    Console.WriteLine("Unknown command: " + command);
+                    Usage();
+                    Environment.Exit(1);
                 }
-                else
-                {
-                    if (command.Equals("config", StringComparison.OrdinalIgnoreCase))
-                    {
-                        Config.config_path = cur_dir + args[i + 1];
-                    }
-                    else
-                    {
-                        if (command.Equals("output", StringComparison.OrdinalIgnoreCase) || command.Equals("o"))
-                        {
-                            Config.output_file = cur_dir + args[i + 1];
-                        }
-                        else
-                        {
-                            if (command.Equals("n", StringComparison.OrdinalIgnoreCase))
-                            {
-                                Config.N = Int16.Parse(args[i + 1]);
-                            }
-                            else
-                            {
-                                if (command.Equals("c", StringComparison.OrdinalIgnoreCase) || command.Equals("cycle", StringComparison.OrdinalIgnoreCase))
-                                {
-                                    Config.sim_type = SIM_TYPE.cycle;
-                                    Config.sim_cycle = UInt64.Parse(args[i + 1]);
-                                }
-                                else {
-                                    Usage();
-                                    Environment.Exit(1);
-                                }
-                            }
-                        }
-                    }
-                }
-              
             }
             return true;
-
         }
 
         public bool setValue(string key_, object value_)
@@ -244,20 +213,15 @@ namespace PIMSim.General
             foreach (var item in proc)
             {
                 item.PrintStatus();
-                
             }
             Mctrl.PrintStatus();
             if (Config.use_pim)
                 PIMMctrl.PrintStatus();
-                
-            
+
             ins_p.PrintStatus();
-            
+
             foreach (var item in pim.unit)
-            {
                 item.PrintStatus();
-                
-            }
         }
     }
 }

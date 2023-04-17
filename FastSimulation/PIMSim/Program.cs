@@ -29,8 +29,6 @@ namespace PIMSim
         public static PIMSimulator pimsim;
         static void Main(string[] args)
         {
-            Console.WriteLine(Environment.StackTrace);
-            Console.WriteLine(string.Join(" | ", args));
             AppDomain.CurrentDomain.ProcessExit += new EventHandler(CurrentDomain_ProcessExit);
             pimsim = new PIMSimulator(args);
             pimsim.run();
