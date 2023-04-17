@@ -11,7 +11,7 @@ using PIMSim.Memory;
 using PIMSim.General;
 using PIMSim.Memory.DDR;
 using PIMSim.Statistics;
-using mctrl = PIMSim.PIM.PIMMctrl;
+using Mctrl = PIMSim.PIM.PIMMctrl;
 using PIMSim.Partitioner;
 #endregion
 
@@ -198,7 +198,7 @@ namespace PIMSim.PIM
         public bool add_to_mctrl(ProcRequest req_)
         {
             bandwidth_bit += 64;
-            return mctrl.add_to_mctrl(req_);
+            return Mctrl.add_to_mctrl(req_);
         }
 
 
@@ -246,7 +246,7 @@ namespace PIMSim.PIM
             if (Config.DEBUG_PIM)
                 DEBUG.WriteLine("--PIM Proc : Served WriteBack Reqs : [" + writeback_req[0].type + "] [0x" + writeback_req[0].actual_addr.ToString("X") + "]");
             ProcRequest req = writeback_req[0];
-            return mctrl.add_to_mctrl(req);
+            return Mctrl.add_to_mctrl(req);
         }
 
         /// <summary>

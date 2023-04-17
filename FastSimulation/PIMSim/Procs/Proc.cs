@@ -5,7 +5,7 @@ using PIMSim.Configs;
 using PIMSim.General;
 using PIMSim.Statistics;
 using PIMSim.PIM;
-using mctrl = PIMSim.Procs.Mctrl;
+using Mctrl = PIMSim.Procs.Mctrl;
 using PIMSim.Partitioner;
 using PIMSim.General.Ports;
 using PIMSim.General.Protocols;
@@ -202,7 +202,7 @@ namespace PIMSim.Procs
         /// <returns></returns>
         public bool add_to_mctrl(ProcRequest req_)
         {
-            return mctrl.add_to_mctrl(req_);
+            return Mctrl.add_to_mctrl(req_);
         }
 
         /// <summary>
@@ -294,7 +294,7 @@ namespace PIMSim.Procs
             if (Config.DEBUG_PROC)
                 DEBUG.WriteLine("-- Proc : Served WriteBack Reqs : [" + writeback_req[0].type + "] [0x" + writeback_req[0].actual_addr.ToString("X") + "]");
             ProcRequest req = writeback_req[0];
-            return mctrl.add_to_mctrl(req);
+            return Mctrl.add_to_mctrl(req);
 
         }
 
