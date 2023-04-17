@@ -442,7 +442,17 @@ namespace PIMSim.General
             }
             return false;
         }
-
-
+        public override bool Equals(object obj)
+        {
+            if (obj is AddressRange)
+            {
+                return this == (AddressRange)obj;
+            }
+            return false;
+        }
+        public override int GetHashCode()
+        {
+            return _start.GetHashCode() ^ _end.GetHashCode() ^ intlvBits.GetHashCode() ^ intlvHighBit.GetHashCode() ^ intlvMatch.GetHashCode();
+        }
     }
 }
