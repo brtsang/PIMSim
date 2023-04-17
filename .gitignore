@@ -32,3 +32,5 @@
 tags
 */taga
 *.csproj.user
+FastSimulation/PIMSim/Debug
+FastSimulation/PIMSim/Release
