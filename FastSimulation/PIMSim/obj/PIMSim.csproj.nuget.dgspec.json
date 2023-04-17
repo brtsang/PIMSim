@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/keelbeelveel/Documents/school/PIMSim/FastSimulation/PIMSim/PIMSim.csproj": {}
+    "C:\\Users\\bhtsa\\Documents\\DCSProj\\PIMSim\\FastSimulation\\PIMSim\\PIMSim.csproj": {}
   },
   "projects": {
-    "/home/keelbeelveel/Documents/school/PIMSim/FastSimulation/PIMSim/PIMSim.csproj": {
+    "C:\\Users\\bhtsa\\Documents\\DCSProj\\PIMSim\\FastSimulation\\PIMSim\\PIMSim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/keelbeelveel/Documents/school/PIMSim/FastSimulation/PIMSim/PIMSim.csproj",
+        "projectUniqueName": "C:\\Users\\bhtsa\\Documents\\DCSProj\\PIMSim\\FastSimulation\\PIMSim\\PIMSim.csproj",
         "projectName": "PIMSim",
-        "projectPath": "/home/keelbeelveel/Documents/school/PIMSim/FastSimulation/PIMSim/PIMSim.csproj",
-        "packagesPath": "/home/keelbeelveel/.nuget/packages/",
-        "outputPath": "/home/keelbeelveel/Documents/school/PIMSim/FastSimulation/PIMSim/obj/",
+        "projectPath": "C:\\Users\\bhtsa\\Documents\\DCSProj\\PIMSim\\FastSimulation\\PIMSim\\PIMSim.csproj",
+        "packagesPath": "C:\\Users\\bhtsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bhtsa\\Documents\\DCSProj\\PIMSim\\FastSimulation\\PIMSim\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/keelbeelveel/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\bhtsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -68,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

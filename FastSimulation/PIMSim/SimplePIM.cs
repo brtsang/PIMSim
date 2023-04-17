@@ -210,14 +210,15 @@ namespace PIMSim.General
                             }
                             else
                             {
-                                if (command.Equals("c", StringComparison.OrdinalIgnoreCase)|| command.Equals("cycle", StringComparison.OrdinalIgnoreCase))
+                                if (command.Equals("c", StringComparison.OrdinalIgnoreCase) || command.Equals("cycle", StringComparison.OrdinalIgnoreCase))
                                 {
                                     Config.sim_type = SIM_TYPE.cycle;
                                     Config.sim_cycle = UInt64.Parse(args[i + 1]);
                                 }
-                                Usage();
-                                //EDITED BY BRIAN
-                                //Environment.Exit(1);
+                                else {
+                                    Usage();
+                                    Environment.Exit(1);
+                                }
                             }
                         }
                     }
