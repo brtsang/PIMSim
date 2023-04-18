@@ -114,22 +114,29 @@ namespace PIMSim.General
 
             for (UInt64 i = 0; i < execution; i++)
             {
+                //Trace.step increases cycle count and process timing requests 
                 trace.Step();
+                //INS_P.step also increases cycle count and identify whetheer the instruction is PIM or normal
                 ins_p.Step();
                 foreach (var mem in MemorySelector.MemoryInfo)
                 {
                     if (GlobalTimer.ifMemoryStep(0))
+                        //increases cycle count, adds req to transition queue, handle memory accesses
                         mem.Item3.Step();
                 }
+                //"Thigs ctrl done every cycle." Ensures data accesses are correct through locks and stuff
                 Mctrl.Step();
+                //similar to above, controls data acceses with locks
                 PIMMctrl.Step();
                 for (int j = 0; j < Config.N; j++)
                 {
                     if (GlobalTimer.ifProcStep(j))
+                    //One cycle of core, has alu calls in it
                         proc[j].Step();
                 }
 
                 if (GlobalTimer.ifPIMUnitStep(0))
+                //this eventually calls the adder_conventional?
                     pim.Step();
 
                 if (Config.sim_type == SIM_TYPE.file)
