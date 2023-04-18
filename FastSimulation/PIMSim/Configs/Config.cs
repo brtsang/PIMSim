@@ -373,8 +373,6 @@ namespace PIMSim.Configs
                 }
             }
             checkAllReady();
-
-
         }
 
         /// <summary>
@@ -410,6 +408,11 @@ namespace PIMSim.Configs
             try
             {
                 //string cur_dir = System.IO.Directory.GetCurrentDirectory();
+                if(!File.Exists(config_file))
+                {
+                    DEBUG.WriteLine("ERROR: Config file not found.");
+                    Environment.Exit(2);
+                }
                 FileStream fs = new FileStream(config_file, FileMode.Open);
                 StreamReader sr = new StreamReader(fs);
                 string line = "";
