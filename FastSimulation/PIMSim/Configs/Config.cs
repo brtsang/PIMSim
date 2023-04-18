@@ -203,8 +203,9 @@ namespace PIMSim.Configs
 
         public static string pim_config_file => Config.config_path + Path.DirectorySeparatorChar+"PIM_Settings.ini";
 
-
-        public static Trace_Type trace_type = Trace_Type.Detailed;
+        //Change this line if you want it to run simplified or detailed
+        //public static Trace_Type trace_type = Trace_Type.PC;//Simple
+        public static Trace_Type trace_type = Trace_Type.Detailed;//Detailed
 
 
         public static Text_Type text_type = Text_Type.Txt;
