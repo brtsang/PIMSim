@@ -142,7 +142,7 @@ You can run PIMSim by providing such paramaters:
               -c, -cycle CYCLES         specify the execution cycles.
 BRIAN ADDED THIS PART
 This is the command line args that I have been running with
--t /examples/1cpu_1pu_cpu_pc/CPU0.trace -config /examples/1cpu_1pu_cpu_pc/ –o /examples/1cpu_1pu_cpu_pc/output.txt –n 1 –c 100
+-t /examples/1cpu_1pu_cpu_pc/ -config /examples/1cpu_1pu_cpu_pc/ –o /examples/1cpu_1pu_cpu_pc/output.txt –n 1 –c 100
 I am not 100% how proccount and cycles affect anything yet 
 Also this does not finish I am still working on that
 
