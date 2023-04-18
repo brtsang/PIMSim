@@ -113,11 +113,6 @@ namespace PIMSim.TraceReader
             ServeBuffer();
 
         }
-
-<<<<<<< HEAD
-        #endregion
-=======
 #endregion
->>>>>>> f176197 (fixed things)
     }
 }
