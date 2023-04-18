@@ -190,7 +190,7 @@ namespace PIMSim.General
                     Config.sim_type = SIM_TYPE.cycle;
                     Config.sim_cycle = UInt64.Parse(args[i + 1]);
                 } else {
-                    Console.WriteLine("Unknown command: " + command);
+                    Console.WriteLine("Unknown argument: " + command);
                     Usage();
                     Environment.Exit(1);
                 }

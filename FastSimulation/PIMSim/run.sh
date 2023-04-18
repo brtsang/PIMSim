@@ -1,2 +1,2 @@
 #!/bin/bash
-dotnet run -t /examples/1cpu_1pu_cpu_pc/ -config /examples/1cpu_1pu_cpu_pc/ -o /examples/1cpu_1pu_cpu_pc/output.txt -n 1 -c 100
+dotnet run -t /examples/1cpu1pu_function_detail/ -config /examples/1cpu1pu_function_detail/ -o /examples/1cpu1pu_function_detail/output.txt -n 1 -c 100
