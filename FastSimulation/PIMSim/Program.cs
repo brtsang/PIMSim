@@ -22,10 +22,9 @@ namespace PIMSim
         static void CurrentDomain_ProcessExit(object sender, EventArgs e)
         {
             if (Config.fs != null)
-            {
                 Config.fs.Close();
+            if (Config.sw != null)
                 Config.sw.Close();
-            }
             Console.ReadKey();
         }
         public static PIMSimulator pimsim;
