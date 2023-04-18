@@ -24,9 +24,6 @@ namespace PIMSim
             if (Config.fs != null)
             {
                 Config.fs.Close();
-            }
-            if (Config.sw != null)
-            {
                 Config.sw.Close();
             }
             Console.ReadKey();
