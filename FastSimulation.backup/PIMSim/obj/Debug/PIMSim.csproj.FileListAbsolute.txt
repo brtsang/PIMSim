@@ -1,8 +1,0 @@
-C:\Users\Brian\Documents\DCS Proj\PIMSim\Fast Simulation\PIMSim\bin\Debug\PIMSim.exe.config
-C:\Users\Brian\Documents\DCS Proj\PIMSim\Fast Simulation\PIMSim\bin\Debug\PIMSim.exe
-C:\Users\Brian\Documents\DCS Proj\PIMSim\Fast Simulation\PIMSim\bin\Debug\PIMSim.pdb
-C:\Users\Brian\Documents\DCS Proj\PIMSim\Fast Simulation\PIMSim\obj\Debug\PIMSim.csproj.AssemblyReference.cache
-C:\Users\Brian\Documents\DCS Proj\PIMSim\Fast Simulation\PIMSim\obj\Debug\PIMSim.csproj.SuggestedBindingRedirects.cache
-C:\Users\Brian\Documents\DCS Proj\PIMSim\Fast Simulation\PIMSim\obj\Debug\PIMSim.csproj.CoreCompileInputs.cache
-C:\Users\Brian\Documents\DCS Proj\PIMSim\Fast Simulation\PIMSim\obj\Debug\PIMSim.exe
-C:\Users\Brian\Documents\DCS Proj\PIMSim\Fast Simulation\PIMSim\obj\Debug\PIMSim.pdb
