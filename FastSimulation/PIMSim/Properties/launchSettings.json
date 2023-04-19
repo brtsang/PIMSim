@@ -2,8 +2,8 @@
   "profiles": {
     "PIMSim": {
       "commandName": "Project",
-      "commandLineArgs": "-t /examples/1cpu_1pu_cpu_pc/CPU0.trace -config /examples/1cpu_1pu_cpu_pc/ -o /examples/1cpu_1pu_cpu_pc/output.txt -n 1 -c 100",
-      "workingDirectory": "C:\\Users\\bhtsa\\Documents\\DCSProj\\PIMSim\\FastSimulation\\PIMSim",
+      "commandLineArgs": "-t /examples/1cpu1pu_function_detail/ -config /examples/1cpu1pu_function_detail/ -o /examples/1cpu1pu_function_detail/output.txt -n 1 -c 10000",
+      "workingDirectory": "C:\\Users\\Brian\\Documents\\DCSProj\\PIMSim\\FastSimulation\\PIMSim",
       "hotReloadEnabled": false
     }
   }
