@@ -124,7 +124,7 @@ namespace PIMSim.General
                         //increases cycle count, adds req to transition queue, handle memory accesses
                         mem.Item3.Step();
                 }
-                //"Thigs ctrl done every cycle." Ensures data accesses are correct through locks and stuff
+                //"Things ctrl done every cycle." Ensures data accesses are correct through locks and stuff
                 Mctrl.Step();
                 //similar to above, controls data acceses with locks
                 PIMMctrl.Step();

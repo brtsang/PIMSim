@@ -16,7 +16,7 @@ namespace PIMSim.Partitioner
     /// <summary>
     /// Instruction Partitioner
     /// Instruction partitioner does two things:
-    /// 1.  Get reqs from TraceFetcher and  store them in the list by the order of there destiny id.
+    /// 1.  Get reqs from TraceFetcher and  store them in the list by the order of their destiny id.
     /// 2.  Send reqs to their execution units.
     /// </summary>
     public class InsPartition : SimulatorObj
