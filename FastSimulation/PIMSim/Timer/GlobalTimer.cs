@@ -16,8 +16,7 @@ namespace PIMSim.General
     /// <summary>
     /// Overall Clock Synchronization.
     /// </summary>
-    public static class GlobalTimer 
-    {
+    public static class GlobalTimer {
         #region Static Varibales
 
         public readonly static UInt64 reference_clock = Config.proc_frequent;
@@ -74,36 +73,21 @@ namespace PIMSim.General
         /// </summary>
         /// <param name="pid">id of Processor.</param>
         /// <returns></returns>
-        public static bool ifProcStep(int pid)
-        {
-            if (tick % host_cpu_clock_factor[pid] == 0)
-                return true;
-            return false;
-        }
+        public static bool ifProcStep(int pid) { return (tick % host_cpu_clock_factor[pid] == 0); }
 
         /// <summary>
         /// Memory Synchronous clock.
         /// </summary>
         /// <param name="pid">id of memory objects.</param>
-        /// <returns></returns>
-        public static bool ifMemoryStep(int pid)
-        {
-            if (tick % ram_clock_factor[pid] == 0)
-                return true;
-            return false;
-        }
+        /// <returns>bool</returns>
+        public static bool ifMemoryStep(int pid) { return (tick % ram_clock_factor[pid] == 0); }
 
         /// <summary>
         /// PIM Unit Synchronous clock.
         /// </summary>
         /// <param name="pid">id of PIM Unit.</param>
         /// <returns></returns>
-        public static bool ifPIMUnitStep(int pid)
-        {
-            if (tick % pimunit_clock_factor[pid] == 0)
-                return true;
-            return false;
-        }
+        public static bool ifPIMUnitStep(int pid) { return (tick % pimunit_clock_factor[pid] == 0); }
         #endregion
     }
 }
