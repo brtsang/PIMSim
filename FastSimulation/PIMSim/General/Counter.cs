@@ -98,7 +98,6 @@ namespace PIMSim.General
         /// If zero. 
         /// </summary>
         public bool Zero => count == 0 && max != 0;
-
         #endregion
     }
 }

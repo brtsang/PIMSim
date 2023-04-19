@@ -54,7 +54,6 @@ namespace PIMSim.PIM
                 {
                     var p = new PIMProc(ref ins_p, i);
                     unit.Add(p);
-
                 }
             }
             else
@@ -96,6 +95,5 @@ namespace PIMSim.PIM
             }
         }
 #endregion
-
     }
 }
