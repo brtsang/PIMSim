@@ -42,3 +42,4 @@ FastSimulation/.vs
 
 FastSimulation/PIMSim/examples/*/output.txt
 */output.txt
+*/out.txt

@@ -108,6 +108,7 @@ namespace PIMSim.General
         }
         public void run()
         {
+            // TODO: Uhhh wtf. This will never run with this setting. kb 14:25 4/19/23
             UInt64 execution = UInt64.MaxValue;
             if (Config.sim_type == SIM_TYPE.cycle)
                 execution = Config.sim_cycle;

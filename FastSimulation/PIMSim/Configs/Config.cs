@@ -426,7 +426,7 @@ namespace PIMSim.Configs
                     {
 
                         string[] split = line.Replace(" ", "").Split('=');
-                        if (line.Count() % 2 != 0)
+                        if (split.Count() % 2 != 0)
                         {
                             DEBUG.WriteLine("Please make sure the line is correct: " + line);
                             continue;
@@ -477,16 +477,24 @@ namespace PIMSim.Configs
                                     Config.ram_type = RAM_TYPE.HYBRID;
                                 }
                             }
-                            continue;
+                        } else if (split[0] == "trace_type") {
+                            if (split[1].Contains("detailed", StringComparison.OrdinalIgnoreCase)) {
+                                trace_type = Trace_Type.Detailed;
+                            } else if (split[1].Contains("pc", StringComparison.OrdinalIgnoreCase)) {
+                                trace_type = Trace_Type.PC;
+                            } else {
+                                DEBUG.Error("Error in input trace type.");
+                                Environment.Exit(2);
+                            }
+                        } else {
+                            SetValue(split[0], split[1]);
                         }
-                        SetValue(split[0], split[1]);
                     }
                 }
             }
             catch
             {
                 DEBUG.WriteLine("ERROR : cannot read configs. ");
-
             }
         }
 
