@@ -25,7 +25,7 @@ ChkPath() {
     fi
 }
 
-PREFIX="/"
+PREFIX=""
 
 if [ -z $1 ]; then Usage; fi
 
@@ -43,7 +43,7 @@ case $1 in
         PREFIX="tests/"
         shift
         ;;
-    *)
+    *"-"*)
         echo "Unrecognized argument: $1"
         Usage
         ;;
