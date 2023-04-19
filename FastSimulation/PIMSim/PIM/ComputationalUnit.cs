@@ -16,13 +16,13 @@ namespace PIMSim.PIM
 
         /// <summary>
         /// [Memory Read Callback]
-        /// Triger by a memory read operation complete 
+        /// Trigger by a memory read operation complete 
         /// </summary>
         public ReadCallBack read_callback;
 
         /// <summary>
         /// [Memory Write Callback]
-        /// Triger by a memory write operation complete
+        /// Trigger by a memory write operation complete
         /// </summary>
         public WriteCallBack write_callback;
         public int id;
