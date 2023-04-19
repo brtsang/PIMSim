@@ -20,15 +20,15 @@ namespace PIMSim.PIM
     /// </summary>
     public class PIM : SimulatorObj
     {
-        #region Private Variables
+#region Private Variables
         /// <summary>
         /// attached instruction partationer
         /// </summary>
         private InsPartition ins_p;
 
-        #endregion
+#endregion
 
-        #region Public Variables
+#region Public Variables
         /// <summary>
         /// all computational unit includes procs and pipelines
         /// </summary>
@@ -36,9 +36,9 @@ namespace PIMSim.PIM
 
 
 
-        #endregion
+#endregion
 
-        #region Public Methods
+#region Public Methods
         public PIM(ref InsPartition ins_p_)
         {
             if (Config.DEBUG_PIM)
@@ -66,38 +66,28 @@ namespace PIMSim.PIM
 
                 for (int i = 0; i < PIMConfigs.CU_Name.Count; i++)
                 {
-                    if (PIMConfigs.CU_Name[i] == "Customied")
+                    if (PIMConfigs.CU_Name[i] == "EncryptionEngine")
                     {
-                        //add your code here
+                        unit.Add(new EncryptionEngine(i, ref ins_p) as ComputationalUnit);
+                        return;
+                    } else if (PIMConfigs.CU_Name[i] == "Adder")
+                    {
+                        unit.Add(new Adder(i, ref ins_p) as ComputationalUnit);
+                        return;
+                    }
+                    else if (PIMConfigs.CU_Name[i] == "Adder_Conventional")
+                    {
+                        unit.Add(new Adder_Conventional(i, ref ins_p) as ComputationalUnit);
+                        return;
                     }
                     else
                     {
-                        if (PIMConfigs.CU_Name[i] == "Adder")
-                        {
-                            unit.Add(new Adder(i, ref ins_p) as ComputationalUnit);
-                            return;
-                        }
-                        else
-                        {
-                            if (PIMConfigs.CU_Name[i] == "Adder_Conventional")
-                            {
-                                unit.Add(new Adder_Conventional(i, ref ins_p) as ComputationalUnit);
-                                return;
-                            }
-                            else
-                            {
-                                DEBUG.Error("No PIM Unit templates.");
-                                Environment.Exit(2);
-                            }
-                        }
-
+                        DEBUG.Error("No PIM Unit templates.");
+                        Environment.Exit(2);
                     }
                 }
             }
-
         }
-
-
         public override void Step()
         {
 
@@ -106,7 +96,7 @@ namespace PIMSim.PIM
                 unit[i].Step();
             }
         }
-        #endregion
+#endregion
 
     }
 }

@@ -66,47 +66,40 @@ namespace PIMSim.PIM
 
                 for (int i = 0; i < PIMConfigs.CU_Name.Count; i++)
                 {
-                    if (PIMConfigs.CU_Name[i] == "Customied")
+                    if (PIMConfigs.CU_Name[i] == "EncryptionEngine")
                     {
-                        //add your code here
+                        unit.Add(new EncryptionEngine(i, ref ins_p) as ComputationalUnit);
+                        return;
+                    } else if (PIMConfigs.CU_Name[i] == "Adder")
+                    {
+                        unit.Add(new Adder(i, ref ins_p) as ComputationalUnit);
+                        return;
+                    }
+                    else if (PIMConfigs.CU_Name[i] == "Adder_Conventional")
+                    {
+                        unit.Add(new Adder_Conventional(i, ref ins_p) as ComputationalUnit);
+                        return;
                     }
                     else
                     {
-                        if (PIMConfigs.CU_Name[i] == "Adder")
-                        {
-                            unit.Add(new Adder(i, ref ins_p) as ComputationalUnit);
-                            return;
-                        }
-                        else
-                        {
-                            if (PIMConfigs.CU_Name[i] == "Adder_Conventional")
-                            {
-                                unit.Add(new Adder_Conventional(i, ref ins_p) as ComputationalUnit);
-                                return;
-                            }
-                            else
-                            {
-                                DEBUG.Error("No PIM Unit templates.");
-                                Environment.Exit(2);
-                            }
-                        }
-
+                        DEBUG.Error("No PIM Unit templates.");
+                        Environment.Exit(2);
                     }
                 }
             }
-
         }
-
-
-        public override void Step()
-        {
-
-            for (int i = unit.Count - 1; i >= 0; i--)
-            {
-                unit[i].Step();
-            }
-        }
-        #endregion
-
     }
+
+
+    public override void Step()
+    {
+
+        for (int i = unit.Count - 1; i >= 0; i--)
+        {
+            unit[i].Step();
+        }
+    }
+#endregion
+
+}
 }
