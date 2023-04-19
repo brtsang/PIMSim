@@ -90,7 +90,6 @@ namespace PIMSim.PIM
         }
         public override void Step()
         {
-
             for (int i = unit.Count - 1; i >= 0; i--)
             {
                 unit[i].Step();
