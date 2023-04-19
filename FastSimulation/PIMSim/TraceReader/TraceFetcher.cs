@@ -48,20 +48,12 @@ namespace PIMSim.TraceReader
             {
                 // reader = ClassActivition.CreateInstance<FileReader>("PIMSim.TraceReader.DetailedTxtReader");
                 reader = new DetailedTxtReader();
+            } else if(Config.trace_type == Trace_Type.PC) {
+                reader = new PCTxtReader();
+            } else {
+                DEBUG.Error("Undefined TraceFetcher Type");
+                Environment.Exit(2);
             }
-            else
-            {
-                if(Config.text_type== Text_Type.Txt)
-                {
-                    reader = new PCTxtReader();
-                }
-                else
-                {
-                    //gzipreader
-                }
-            }
-
-
 
             port = new TraceFetcherMasterPorts("TraceFetcher Data Port", PortManager.Allocate());
             port.owner = this;
@@ -74,7 +66,6 @@ namespace PIMSim.TraceReader
                 if (packets.Count() > 0)
                 {
                     packets.ForEach(x => { x.Item2.ts_arrival = GlobalTimer.tick; recvTimingReq(x.Item2); port.buffer.Remove(x); });
-                  //  packets.ForEach(x => recvFunctionalReq(x.Item2));
                 }
             }
         }
@@ -122,7 +113,6 @@ namespace PIMSim.TraceReader
             ServeBuffer();
 
         }
-
-        #endregion
+#endregion
     }
 }

@@ -203,8 +203,9 @@ namespace PIMSim.Configs
 
         public static string pim_config_file => Config.config_path + Path.DirectorySeparatorChar+"PIM_Settings.ini";
 
-
-        public static Trace_Type trace_type = Trace_Type.PC;
+        //Change this line if you want it to run simplified or detailed
+        //public static Trace_Type trace_type = Trace_Type.PC;//Simple
+        public static Trace_Type trace_type = Trace_Type.Detailed;//Detailed
 
 
         public static Text_Type text_type = Text_Type.Txt;
@@ -372,8 +373,6 @@ namespace PIMSim.Configs
                 }
             }
             checkAllReady();
-
-
         }
 
         /// <summary>
@@ -409,6 +408,11 @@ namespace PIMSim.Configs
             try
             {
                 //string cur_dir = System.IO.Directory.GetCurrentDirectory();
+                if(!File.Exists(config_file))
+                {
+                    DEBUG.WriteLine("ERROR: Config file not found.");
+                    Environment.Exit(2);
+                }
                 FileStream fs = new FileStream(config_file, FileMode.Open);
                 StreamReader sr = new StreamReader(fs);
                 string line = "";

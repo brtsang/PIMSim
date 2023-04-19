@@ -14,6 +14,7 @@ namespace PIMSim
 {
     class Program
     {
+        public static bool graceFulExit = false;
         /// <summary>
         /// When application is going to exit, close file handles.
         /// </summary>
@@ -21,12 +22,12 @@ namespace PIMSim
         /// <param name="e"></param>
         static void CurrentDomain_ProcessExit(object sender, EventArgs e)
         {
-            if (Config.fs != null)
-            {
-                Config.fs.Close();
-                Config.sw.Close();
+            try { Config.fs.Close(); } catch { } // god this code makes me wanna vomit
+            try { Config.sw.Close(); } catch { } // god this code makes me wanna vomit
+            if (!graceFulExit) {
+                Console.WriteLine("Press any key to exit.");
+                Console.ReadKey();
             }
-            Console.ReadKey();
         }
         public static PIMSimulator pimsim;
         static void Main(string[] args)
@@ -35,8 +36,9 @@ namespace PIMSim
             pimsim = new PIMSimulator(args);
             pimsim.run();
             pimsim.PrintStatus();
+            Console.WriteLine("Press any key to continue.");
             Console.ReadKey();
-
+            graceFulExit = true;
         }
     }
 }

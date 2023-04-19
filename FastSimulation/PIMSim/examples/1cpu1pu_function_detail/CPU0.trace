@@ -1,1 +1,2 @@
-0 | addi rsp, rsp, 0x8
+0|ld t1, SS:[rsp]|R|D=0x0000000000000001 A=0x7fffffffee20
+1|addi rsp, rsp, 0x8

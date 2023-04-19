@@ -28,7 +28,7 @@ namespace PIMSim.PIM
 
         public string name = "ADDer";
         public int latency_load = 1;
-        public int latnecy_store = 1;
+        public int latency_store = 1;
         public int latency_op = 1;
         public InsPartition isp;
         public Function curr = null;
@@ -82,7 +82,7 @@ namespace PIMSim.PIM
             //**       Stage 4:     Write results back              **
             //**                                                    **
             //********************************************************
-            var item_stage4 = new PIMStage_Store(this, latnecy_store);
+            var item_stage4 = new PIMStage_Store(this, latency_store);
             item_stage4.set_link(ref pipeline[2]);
             pipeline[3] = item_stage4 as Stage;
 
