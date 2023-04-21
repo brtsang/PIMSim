@@ -167,7 +167,7 @@ namespace PIMSim.Configs
 
 
         public static bool DEBUG_CACHE = true;
-        public static bool DEBUG_TRACE = true;
+        public static bool DEBUG_TRACE = false;
         public static bool DEBUG_PC = false;
         public static bool DEBUG_MTRL = true;
         public static bool DEBUG_COHERENCE = true;

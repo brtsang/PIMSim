@@ -38,8 +38,7 @@ namespace PIMSim.Statistics
         /// <param name="s"></param>
         public static void WriteLine(string s="")
         {
-            if(!Config.DEBUG_TRACE) return;
-                if (sw == null)
+            if(!Config.DEBUG_TRACE)
                     Console.WriteLine(s);
             else
                 sw.WriteLine(s);
