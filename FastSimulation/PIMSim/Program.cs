@@ -33,7 +33,7 @@ namespace PIMSim
         static void Main(string[] args)
         {
             AppDomain.CurrentDomain.ProcessExit += new EventHandler(CurrentDomain_ProcessExit);
-            pimsim = new PIMSimulator(args);
+             pimsim = new PIMSimulator(args);
             pimsim.run();
             pimsim.PrintStatus();
             Console.WriteLine("Press any key to continue.");

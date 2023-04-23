@@ -131,6 +131,7 @@ namespace PIMSim.PIM
                     pipeline[0].set_input(curr.input[0]);
                     pipeline[1].set_input(curr.input[1]);
                     (pipeline[3] as PIMStage_Store).store_addr = curr.output[0];
+                    total_latency += curr.latency;
                 }
 
             }

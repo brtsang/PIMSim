@@ -321,7 +321,9 @@ namespace PIMSim.Partitioner
                                 all_ins[(to_add as Instruction).pid].Enqueue(to_add);
                             else
                             {
-                                pim_ins[corresponding_unit(null)].Enqueue(to_add);
+                               // if (to_add.name == "Add") {
+                                    pim_ins[corresponding_unit(null)].Enqueue(to_add);
+                                //}
                             }
                             to_add = null;
                         }
@@ -343,7 +345,14 @@ namespace PIMSim.Partitioner
                         }
                         else
                         {
-                            pim_ins[corresponding_unit(null)].Enqueue(to_add);
+                            if (((PIMSim.General.Function)to_add).name == "Add")
+                            {
+                                pim_ins[corresponding_unit(null)].Enqueue(to_add);
+                            }
+                            else {
+                                pim_ins[1].Enqueue(to_add);
+                            }
+                            //pim_ins[corresponding_unit(null)].Enqueue(to_add);
                         }
                     }
                     return true;

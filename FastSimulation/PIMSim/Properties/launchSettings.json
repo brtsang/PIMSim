@@ -2,7 +2,7 @@
   "profiles": {
     "PIMSim": {
       "commandName": "Project",
-      "commandLineArgs": "-t /examples/1cpu1pu_function_detail/ -config /examples/1cpu1pu_function_detail/ -o /examples/1cpu1pu_function_detail/output.txt -n 1 -c 100",
+      "commandLineArgs": "-t /examples/1cpu1pu_function_detail/ -config /examples/1cpu1pu_function_detail/ -o /examples/1cpu1pu_function_detail/output.txt -n 1 -c 100 > output.txt",
       "workingDirectory": "C:\\Users\\bhtsa\\Documents\\DCSProj\\PIMSim\\FastSimulation\\PIMSim",
       "hotReloadEnabled": false
     }

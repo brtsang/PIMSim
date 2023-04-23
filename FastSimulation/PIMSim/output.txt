@@ -1,0 +1,1948 @@
+-- Trace Fetcher : Set Trace File Path : C:\Users\bhtsa\Documents\DCSProj\PIMSim\FastSimulation\PIMSim/examples/1cpu1pu_function_detail/
+SUCCESS : INITIALIZED LINK 0
+SUCCESS : INITIALIZED LINK 1
+SUCCESS : INITIALIZED LINK 2
+SUCCESS : INITIALIZED LINK 3
+DEBUG: == Loading system model file 'C:\Users\bhtsa\Documents\DCSProj\PIMSim\FastSimulation\PIMSim/examples/1cpu1pu_function_detail/\DRAM.ini' == 
+===== MemorySystem 0 =====
+WARNING: Cannot create memory system with 2048MB, defaulting to minimum size of 4096MB
+CH. 0 TOTAL_STORAGE : 4096MB | 1 Ranks | 16 Devices per rank
+PIM Module Initialed.
+PIM Unit Type : Pipeline.
+DEBUG :  DRAMSim2 Clock Frequency =666666666Hz, CPU Clock Frequency=666666666Hz
+ =======================================================
+ ============== Printing Statistics [id:0]==============
+ (0 bytes) aggregate average bandwidth 0GB/s
+      -Rank   0 : 
+ (0 bytes)
+ (0 bytes)
+        -Bandwidth / Latency  (Bank 0): 0 GB/s		NaN ns
+        -Bandwidth / Latency  (Bank 1): 0 GB/s		NaN ns
+        -Bandwidth / Latency  (Bank 2): 0 GB/s		NaN ns
+        -Bandwidth / Latency  (Bank 3): 0 GB/s		NaN ns
+        -Bandwidth / Latency  (Bank 4): 0 GB/s		NaN ns
+        -Bandwidth / Latency  (Bank 5): 0 GB/s		NaN ns
+        -Bandwidth / Latency  (Bank 6): 0 GB/s		NaN ns
+        -Bandwidth / Latency  (Bank 7): 0 GB/s		NaN ns
+ == Power Data for Rank        0
+   Average Power (watts)     : 0
+     -Background (watts)     : 0
+     -Act/Pre    (watts)     : 0
+     -Burst      (watts)     : 0
+     -Refresh    (watts)     : 0
+
+ == Pending Transactions : 0 (0)==
+
+--------- Memory Controller [0] Update [Cycle 1]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 1]------------
+
+
+----------Host CPU [0] Update [Cycle 1]------------
+
+-- Current Instruction : NOP
+
+---------- ALU Update [Cycle 1]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+--PIM MTRL : Add requests : [LOAD] [0x7FFFFFFFEE18]
+--PIM MTRL : Add requests : [LOAD] [0x7FFFFFFFEE20]
+
+--------- Memory Controller [0] Update [Cycle 2]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 2]------------
+-- Issue ProcRequest : [LOAD] [0x0] [0x7FFFFFFFEE18]
+-- Sent ProcRequest :  [LOAD] [0x0] [0x7FFFFFFFEE18]
+-- Issue ProcRequest : [LOAD] [0x0] [0x7FFFFFFFEE20]
+-- Sent ProcRequest :  [LOAD] [0x0] [0x7FFFFFFFEE20]
+
+
+----------Host CPU [0] Update [Cycle 2]------------
+
+
+---------- ALU Update [Cycle 2]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+-- PIM  MTRL [1] : Push Requests : [LOAD] [0x1FFFFEE18]
+-- PIM  MTRL [1] : Push Requests : [LOAD] [0x1FFFFEE20]
+--DDR[1] ADD transaction: [1FFFFEE18]
+
+--------- Memory Controller [0] Update [Cycle 3]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 3]------------
+
+
+----------Host CPU [0] Update [Cycle 3]------------
+
+
+---------- ALU Update [Cycle 3]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+--DDR[1] ADD transaction: [1FFFFEE20]
+
+--------- Memory Controller [0] Update [Cycle 4]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 4]------------
+
+
+----------Host CPU [0] Update [Cycle 4]------------
+
+
+---------- ALU Update [Cycle 4]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 5]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 5]------------
+
+
+----------Host CPU [0] Update [Cycle 5]------------
+
+
+---------- ALU Update [Cycle 5]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 6]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 6]------------
+
+
+----------Host CPU [0] Update [Cycle 6]------------
+
+
+---------- ALU Update [Cycle 6]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 7]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 7]------------
+
+
+----------Host CPU [0] Update [Cycle 7]------------
+
+
+---------- ALU Update [Cycle 7]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 8]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 8]------------
+
+
+----------Host CPU [0] Update [Cycle 8]------------
+
+
+---------- ALU Update [Cycle 8]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 9]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 9]------------
+
+
+----------Host CPU [0] Update [Cycle 9]------------
+
+
+---------- ALU Update [Cycle 9]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 10]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 10]------------
+
+
+----------Host CPU [0] Update [Cycle 10]------------
+
+
+---------- ALU Update [Cycle 10]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 11]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 11]------------
+
+
+----------Host CPU [0] Update [Cycle 11]------------
+
+
+---------- ALU Update [Cycle 11]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 12]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 12]------------
+
+
+----------Host CPU [0] Update [Cycle 12]------------
+
+
+---------- ALU Update [Cycle 12]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 13]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 13]------------
+
+
+----------Host CPU [0] Update [Cycle 13]------------
+
+
+---------- ALU Update [Cycle 13]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 14]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 14]------------
+
+
+----------Host CPU [0] Update [Cycle 14]------------
+
+
+---------- ALU Update [Cycle 14]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 15]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 15]------------
+
+
+----------Host CPU [0] Update [Cycle 15]------------
+
+
+---------- ALU Update [Cycle 15]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 16]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 16]------------
+
+
+----------Host CPU [0] Update [Cycle 16]------------
+
+
+---------- ALU Update [Cycle 16]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 17]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 17]------------
+
+
+----------Host CPU [0] Update [Cycle 17]------------
+
+
+---------- ALU Update [Cycle 17]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 18]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 18]------------
+
+
+----------Host CPU [0] Update [Cycle 18]------------
+
+
+---------- ALU Update [Cycle 18]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 19]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 19]------------
+
+
+----------Host CPU [0] Update [Cycle 19]------------
+
+
+---------- ALU Update [Cycle 19]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 20]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 20]------------
+
+
+----------Host CPU [0] Update [Cycle 20]------------
+
+
+---------- ALU Update [Cycle 20]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 21]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 21]------------
+
+
+----------Host CPU [0] Update [Cycle 21]------------
+
+
+---------- ALU Update [Cycle 21]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 22]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 22]------------
+
+
+----------Host CPU [0] Update [Cycle 22]------------
+
+
+---------- ALU Update [Cycle 22]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 23]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 23]------------
+
+
+----------Host CPU [0] Update [Cycle 23]------------
+
+
+---------- ALU Update [Cycle 23]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 24]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 24]------------
+
+
+----------Host CPU [0] Update [Cycle 24]------------
+
+
+---------- ALU Update [Cycle 24]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 25]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 25]------------
+
+
+----------Host CPU [0] Update [Cycle 25]------------
+
+
+---------- ALU Update [Cycle 25]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 26]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 26]------------
+
+
+----------Host CPU [0] Update [Cycle 26]------------
+
+
+---------- ALU Update [Cycle 26]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 27]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 27]------------
+
+
+----------Host CPU [0] Update [Cycle 27]------------
+
+
+---------- ALU Update [Cycle 27]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 28]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 28]------------
+
+
+----------Host CPU [0] Update [Cycle 28]------------
+
+
+---------- ALU Update [Cycle 28]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 29]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 29]------------
+
+
+----------Host CPU [0] Update [Cycle 29]------------
+
+
+---------- ALU Update [Cycle 29]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 30]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 30]------------
+
+
+----------Host CPU [0] Update [Cycle 30]------------
+
+
+---------- ALU Update [Cycle 30]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 31]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 31]------------
+
+
+----------Host CPU [0] Update [Cycle 31]------------
+
+
+---------- ALU Update [Cycle 31]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 32]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 32]------------
+
+
+----------Host CPU [0] Update [Cycle 32]------------
+
+
+---------- ALU Update [Cycle 32]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 33]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 33]------------
+
+
+----------Host CPU [0] Update [Cycle 33]------------
+
+
+---------- ALU Update [Cycle 33]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+Read Callback:  0x1FFFFEE00Block_addr=0x0  latency=30cycles (33->3)
+
+--------- Memory Controller [0] Update [Cycle 34]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 34]------------
+
+
+----------Host CPU [0] Update [Cycle 34]------------
+
+
+---------- ALU Update [Cycle 34]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 35]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 35]------------
+
+
+----------Host CPU [0] Update [Cycle 35]------------
+
+
+---------- ALU Update [Cycle 35]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 36]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 36]------------
+
+
+----------Host CPU [0] Update [Cycle 36]------------
+
+
+---------- ALU Update [Cycle 36]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 37]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 37]------------
+
+
+----------Host CPU [0] Update [Cycle 37]------------
+
+
+---------- ALU Update [Cycle 37]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+Read Callback:  0x1FFFFEE00Block_addr=0x0  latency=33cycles (37->4)
+
+--------- Memory Controller [0] Update [Cycle 38]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 38]------------
+
+
+----------Host CPU [0] Update [Cycle 38]------------
+
+
+---------- ALU Update [Cycle 38]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 39]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 39]------------
+
+
+----------Host CPU [0] Update [Cycle 39]------------
+
+
+---------- ALU Update [Cycle 39]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 40]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 40]------------
+
+
+----------Host CPU [0] Update [Cycle 40]------------
+
+
+---------- ALU Update [Cycle 40]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+--PIM MTRL : Add requests : [STORE] [0x5807B0]
+
+--------- Memory Controller [0] Update [Cycle 41]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 41]------------
+-- Issue ProcRequest : [STORE] [0x0] [0x5807B0]
+-- Sent ProcRequest :  [STORE] [0x0] [0x5807B0]
+
+
+----------Host CPU [0] Update [Cycle 41]------------
+
+
+---------- ALU Update [Cycle 41]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+-- PIM  MTRL [0] : Push Requests : [STORE] [0x5807B0]
+STALLED : STALLED IN RECEIVING
+
+--------- Memory Controller [0] Update [Cycle 42]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 42]------------
+
+
+----------Host CPU [0] Update [Cycle 42]------------
+
+
+---------- ALU Update [Cycle 42]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 43]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 43]------------
+
+
+----------Host CPU [0] Update [Cycle 43]------------
+
+
+---------- ALU Update [Cycle 43]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 44]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 44]------------
+
+
+----------Host CPU [0] Update [Cycle 44]------------
+
+
+---------- ALU Update [Cycle 44]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+SUCCESS : RECEIVED A SUCCESSFUL PACKET RESPONSE
+RECV tag=0; rtn_tag=0
+
+--------- Memory Controller [0] Update [Cycle 45]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 45]------------
+
+
+----------Host CPU [0] Update [Cycle 45]------------
+
+
+---------- ALU Update [Cycle 45]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 46]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 46]------------
+
+
+----------Host CPU [0] Update [Cycle 46]------------
+
+
+---------- ALU Update [Cycle 46]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+--PIM MTRL : Add requests : [LOAD] [0x700FFFFF0001]
+--PIM MTRL : Add requests : [LOAD] [0x700FFFFF0008]
+
+--------- Memory Controller [0] Update [Cycle 47]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 47]------------
+-- Issue ProcRequest : [LOAD] [0x0] [0x700FFFFF0001]
+-- Sent ProcRequest :  [LOAD] [0x0] [0x700FFFFF0001]
+-- Issue ProcRequest : [LOAD] [0x0] [0x700FFFFF0008]
+-- Sent ProcRequest :  [LOAD] [0x0] [0x700FFFFF0008]
+
+
+----------Host CPU [0] Update [Cycle 47]------------
+
+
+---------- ALU Update [Cycle 47]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+-- PIM  MTRL [1] : Push Requests : [LOAD] [0x1FFFF0001]
+-- PIM  MTRL [1] : Push Requests : [LOAD] [0x1FFFF0008]
+--DDR[1] ADD transaction: [1FFFF0001]
+
+--------- Memory Controller [0] Update [Cycle 48]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 48]------------
+
+
+----------Host CPU [0] Update [Cycle 48]------------
+
+
+---------- ALU Update [Cycle 48]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+--DDR[1] ADD transaction: [1FFFF0008]
+
+--------- Memory Controller [0] Update [Cycle 49]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 49]------------
+
+
+----------Host CPU [0] Update [Cycle 49]------------
+
+
+---------- ALU Update [Cycle 49]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 50]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 50]------------
+
+
+----------Host CPU [0] Update [Cycle 50]------------
+
+
+---------- ALU Update [Cycle 50]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 51]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 51]------------
+
+
+----------Host CPU [0] Update [Cycle 51]------------
+
+
+---------- ALU Update [Cycle 51]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 52]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 52]------------
+
+
+----------Host CPU [0] Update [Cycle 52]------------
+
+
+---------- ALU Update [Cycle 52]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 53]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 53]------------
+
+
+----------Host CPU [0] Update [Cycle 53]------------
+
+
+---------- ALU Update [Cycle 53]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 54]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 54]------------
+
+
+----------Host CPU [0] Update [Cycle 54]------------
+
+
+---------- ALU Update [Cycle 54]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 55]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 55]------------
+
+
+----------Host CPU [0] Update [Cycle 55]------------
+
+
+---------- ALU Update [Cycle 55]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 56]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 56]------------
+
+
+----------Host CPU [0] Update [Cycle 56]------------
+
+
+---------- ALU Update [Cycle 56]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 57]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 57]------------
+
+
+----------Host CPU [0] Update [Cycle 57]------------
+
+
+---------- ALU Update [Cycle 57]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 58]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 58]------------
+
+
+----------Host CPU [0] Update [Cycle 58]------------
+
+
+---------- ALU Update [Cycle 58]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 59]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 59]------------
+
+
+----------Host CPU [0] Update [Cycle 59]------------
+
+
+---------- ALU Update [Cycle 59]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 60]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 60]------------
+
+
+----------Host CPU [0] Update [Cycle 60]------------
+
+
+---------- ALU Update [Cycle 60]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 61]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 61]------------
+
+
+----------Host CPU [0] Update [Cycle 61]------------
+
+
+---------- ALU Update [Cycle 61]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 62]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 62]------------
+
+
+----------Host CPU [0] Update [Cycle 62]------------
+
+
+---------- ALU Update [Cycle 62]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 63]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 63]------------
+
+
+----------Host CPU [0] Update [Cycle 63]------------
+
+
+---------- ALU Update [Cycle 63]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 64]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 64]------------
+
+
+----------Host CPU [0] Update [Cycle 64]------------
+
+
+---------- ALU Update [Cycle 64]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 65]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 65]------------
+
+
+----------Host CPU [0] Update [Cycle 65]------------
+
+
+---------- ALU Update [Cycle 65]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 66]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 66]------------
+
+
+----------Host CPU [0] Update [Cycle 66]------------
+
+
+---------- ALU Update [Cycle 66]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 67]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 67]------------
+
+
+----------Host CPU [0] Update [Cycle 67]------------
+
+
+---------- ALU Update [Cycle 67]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 68]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 68]------------
+
+
+----------Host CPU [0] Update [Cycle 68]------------
+
+
+---------- ALU Update [Cycle 68]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 69]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 69]------------
+
+
+----------Host CPU [0] Update [Cycle 69]------------
+
+
+---------- ALU Update [Cycle 69]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 70]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 70]------------
+
+
+----------Host CPU [0] Update [Cycle 70]------------
+
+
+---------- ALU Update [Cycle 70]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 71]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 71]------------
+
+
+----------Host CPU [0] Update [Cycle 71]------------
+
+
+---------- ALU Update [Cycle 71]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 72]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 72]------------
+
+
+----------Host CPU [0] Update [Cycle 72]------------
+
+
+---------- ALU Update [Cycle 72]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 73]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 73]------------
+
+
+----------Host CPU [0] Update [Cycle 73]------------
+
+
+---------- ALU Update [Cycle 73]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 74]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 74]------------
+
+
+----------Host CPU [0] Update [Cycle 74]------------
+
+
+---------- ALU Update [Cycle 74]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 75]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 75]------------
+
+
+----------Host CPU [0] Update [Cycle 75]------------
+
+
+---------- ALU Update [Cycle 75]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 76]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 76]------------
+
+
+----------Host CPU [0] Update [Cycle 76]------------
+
+
+---------- ALU Update [Cycle 76]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+Read Callback:  0x1FFFF0000Block_addr=0x0  latency=28cycles (76->48)
+
+--------- Memory Controller [0] Update [Cycle 77]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 77]------------
+
+
+----------Host CPU [0] Update [Cycle 77]------------
+
+
+---------- ALU Update [Cycle 77]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 78]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 78]------------
+
+
+----------Host CPU [0] Update [Cycle 78]------------
+
+
+---------- ALU Update [Cycle 78]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 79]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 79]------------
+
+
+----------Host CPU [0] Update [Cycle 79]------------
+
+
+---------- ALU Update [Cycle 79]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 80]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 80]------------
+
+
+----------Host CPU [0] Update [Cycle 80]------------
+
+
+---------- ALU Update [Cycle 80]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+Read Callback:  0x1FFFF0000Block_addr=0x0  latency=31cycles (80->49)
+
+--------- Memory Controller [0] Update [Cycle 81]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 81]------------
+
+
+----------Host CPU [0] Update [Cycle 81]------------
+
+
+---------- ALU Update [Cycle 81]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 82]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 82]------------
+
+
+----------Host CPU [0] Update [Cycle 82]------------
+
+
+---------- ALU Update [Cycle 82]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 83]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 83]------------
+
+
+----------Host CPU [0] Update [Cycle 83]------------
+
+
+---------- ALU Update [Cycle 83]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+--PIM MTRL : Add requests : [STORE] [0x5807B0]
+
+--------- Memory Controller [0] Update [Cycle 84]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 84]------------
+-- Issue ProcRequest : [STORE] [0x0] [0x5807B0]
+-- Sent ProcRequest :  [STORE] [0x0] [0x5807B0]
+
+
+----------Host CPU [0] Update [Cycle 84]------------
+
+
+---------- ALU Update [Cycle 84]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+-- PIM  MTRL [0] : Push Requests : [STORE] [0x5807B0]
+STALLED : STALLED IN RECEIVING
+
+--------- Memory Controller [0] Update [Cycle 85]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 85]------------
+
+
+----------Host CPU [0] Update [Cycle 85]------------
+
+
+---------- ALU Update [Cycle 85]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 86]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 86]------------
+
+
+----------Host CPU [0] Update [Cycle 86]------------
+
+
+---------- ALU Update [Cycle 86]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 87]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 87]------------
+
+
+----------Host CPU [0] Update [Cycle 87]------------
+
+
+---------- ALU Update [Cycle 87]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+SUCCESS : RECEIVED A SUCCESSFUL PACKET RESPONSE
+RECV tag=1; rtn_tag=1
+
+--------- Memory Controller [0] Update [Cycle 88]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 88]------------
+
+
+----------Host CPU [0] Update [Cycle 88]------------
+
+
+---------- ALU Update [Cycle 88]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 89]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 89]------------
+
+
+----------Host CPU [0] Update [Cycle 89]------------
+
+
+---------- ALU Update [Cycle 89]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 90]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 90]------------
+
+
+----------Host CPU [0] Update [Cycle 90]------------
+
+
+---------- ALU Update [Cycle 90]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 91]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 91]------------
+
+
+----------Host CPU [0] Update [Cycle 91]------------
+
+
+---------- ALU Update [Cycle 91]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 92]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 92]------------
+
+
+----------Host CPU [0] Update [Cycle 92]------------
+
+
+---------- ALU Update [Cycle 92]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 93]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 93]------------
+
+
+----------Host CPU [0] Update [Cycle 93]------------
+
+
+---------- ALU Update [Cycle 93]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 94]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 94]------------
+
+
+----------Host CPU [0] Update [Cycle 94]------------
+
+
+---------- ALU Update [Cycle 94]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 95]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 95]------------
+
+
+----------Host CPU [0] Update [Cycle 95]------------
+
+
+---------- ALU Update [Cycle 95]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 96]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 96]------------
+
+
+----------Host CPU [0] Update [Cycle 96]------------
+
+
+---------- ALU Update [Cycle 96]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 97]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 97]------------
+
+
+----------Host CPU [0] Update [Cycle 97]------------
+
+
+---------- ALU Update [Cycle 97]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 98]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 98]------------
+
+
+----------Host CPU [0] Update [Cycle 98]------------
+
+
+---------- ALU Update [Cycle 98]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 99]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 99]------------
+
+
+----------Host CPU [0] Update [Cycle 99]------------
+
+
+---------- ALU Update [Cycle 99]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+--------- Memory Controller [0] Update [Cycle 100]------------
+
+
+---------PIM Memory Controller [1] Update [Cycle 100]------------
+
+
+----------Host CPU [0] Update [Cycle 100]------------
+
+
+---------- ALU Update [Cycle 100]------------
+
+-- Pipieline Stage ge_Decode UnStalled
+-- Pipieline Stage ge_LoadData UnStalled
+-- Pipieline Stage ge_Computing UnStalled
+-- Pipieline Stage ge_Writeback UnStalled
+
+-- Current Instruction : NOP
+
+
+++++++++++++++++++++++     Statistics    ++++++++++++++++++++
+
+
+=====================Processor [0] Statistics=====================
+
+        Total Instructions Served : 101
+        Read Instructions         : 0
+        Write Instrcutions        : 0
+        Calculation Instructions  : 0
+        NOP Instructions          : 101
+
+        MSHR Loaded               : 0
+        MSHR Stalled              : 0
+        MSHR Total                : 0
+
+        Simulated Cycle           : 100
+        Memory Cycle              : 100
+
+        Average Read Latency      : 0
+        Average Write Latency     : 0
+        Average Memory Latency    : 0
+         Total Flushed Reqs       : 0
+
+        L1 Cache Hit              : 0
+        L1 Cache Miss             : 0
+        L1 Cache Total Loaded     : 0
+        Shared Cache Hit          : 0
+        Shared Cache Miss         : 0
+        Shared Cache Total Loaded : 0
+
+---------------  MTRL [0] Statistics  -----------
+    Total reqs added : 0
+    Total regs stalled : 0
+ Total Stalled by Coherence :0
+
+---------------  MTRL [1] Statistics  -----------
+    Total reqs added : 6
+    Total regs stalled : 0
+ Total Stalled by Coherence :0
+
+=====================InsPartition Statistics=====================
+
+        Total Requests Sent   : 103
+        Total PIM Requests    : 2
+
+-------------- PIM Unit [0] Messages Statistics ---------
+
+         Sent Messages        : 2
+      Messages Percentage     : 1.941747572815534%
+          Bandwidth           : 0MB/s
+
+-------------- PIM Unit [1] Messages Statistics ---------
+
+         Sent Messages        : 0
+      Messages Percentage     : 0%
+          Bandwidth           : 0MB/s
+
+        Total Bandwidth           : 0MB/s
+
+---------------- PIM Unit [ADDer] Statistics -------------
+
+    Total Functions served : 2
+    Average latency        : 404
+    Internal Bandwidth     : 0 MB/s
+
+---------------- PIM Unit [EncryptionEngine] Statistics -------------
+
+    Total Functions served : 0
+    Average latency        : 0
+    Internal Bandwidth     : 0 MB/s
+
+Press any key to continue.
+ 

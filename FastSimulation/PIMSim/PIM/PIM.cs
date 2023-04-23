@@ -68,16 +68,15 @@ namespace PIMSim.PIM
                     if (PIMConfigs.CU_Name[i] == "EncryptionEngine")
                     {
                         unit.Add(new EncryptionEngine(i, ref ins_p) as ComputationalUnit);
-                        return;
+                        
                     } else if (PIMConfigs.CU_Name[i] == "Adder")
                     {
                         unit.Add(new Adder(i, ref ins_p) as ComputationalUnit);
-                        return;
+                        
                     }
                     else if (PIMConfigs.CU_Name[i] == "Adder_Conventional")
                     {
                         unit.Add(new Adder_Conventional(i, ref ins_p) as ComputationalUnit);
-                        return;
                     }
                     else
                     {
@@ -85,6 +84,7 @@ namespace PIMSim.PIM
                         Environment.Exit(2);
                     }
                 }
+                return;
             }
         }
         public override void Step()

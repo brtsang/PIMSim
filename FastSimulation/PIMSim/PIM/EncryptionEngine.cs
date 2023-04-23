@@ -25,7 +25,7 @@ namespace PIMSim.PIM
         public string name = "EncryptionEngine";
         public int latency_load = 1;
         public int latency_store = 1;
-        public int latency_op = 1;
+        public int latency_op = 361;
         public InsPartition isp;
         public Function curr = null;
 
@@ -73,9 +73,10 @@ namespace PIMSim.PIM
             item_stage3.set_link(ref pipeline[1]);
             pipeline[2] = item_stage3 as Stage;
 
+
             //********************************************************
             //**                                                    **
-            //**       Stage 4:     Write results back              **
+            //**       Stage 86:     Write results back              **
             //**                                                    **
             //********************************************************
             var item_stage4 = new PIMStage_Store(this, latency_store);

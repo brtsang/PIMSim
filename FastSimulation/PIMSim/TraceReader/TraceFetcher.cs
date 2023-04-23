@@ -48,7 +48,7 @@ namespace PIMSim.TraceReader
             {
                 // reader = ClassActivition.CreateInstance<FileReader>("PIMSim.TraceReader.DetailedTxtReader");
                 reader = new DetailedTxtReader();
-            } else if(Config.trace_type == Trace_Type.PC) {
+             } else if(Config.trace_type == Trace_Type.PC) {
                 reader = new PCTxtReader();
             } else {
                 DEBUG.Error("Undefined TraceFetcher Type");
