@@ -14,6 +14,10 @@ using PIMSim.Partitioner;
 namespace PIMSim.PIM
 {
     /// <summary>
+    /// Simple Implement of ADDer
+    /// We divide ADD into 3-stage pipeline: Load-Add-Store
+    /// Two Load operations can be parallel executed.
+    /// This function used bypass data method.
     /// </summary>
     public class EncryptionEngine : ComputationalUnit, PIMInterface
     {
@@ -23,8 +27,6 @@ namespace PIMSim.PIM
         public Stage[] pipeline = new Stage[4];
 
         public string name = "EncryptionEngine";
-        public int latency_load = 1;
-        public int latency_store = 1;
         public int latency_op = 361;
         public InsPartition isp;
         public Function curr = null;
@@ -40,7 +42,7 @@ namespace PIMSim.PIM
 
         public EncryptionEngine(int id_, ref InsPartition insp_)
         {
-            
+
             this.id = id_;
             input_count = 2;
             output_count = 1;
@@ -50,7 +52,7 @@ namespace PIMSim.PIM
             //**           Stage 1-1:   Load Data                   **
             //**                                                    **
             //********************************************************
-            var item_stage1 = new PIMStage_LoadData( this, 0,latency_load);
+            var item_stage1 = new PIMStage_LoadData(this, 0);
             pipeline[0] = (item_stage1 as Stage);
             item_stage1 = null;
 
@@ -59,7 +61,7 @@ namespace PIMSim.PIM
             //**                Stage 1-2:   Load data              **
             //**                                                    **
             //********************************************************
-            var item_stage2 = new PIMStage_LoadData(this,1, latency_load);
+            var item_stage2 = new PIMStage_LoadData(this, 1);
             pipeline[1] = item_stage2 as Stage;
             item_stage2 = null;
 
@@ -73,13 +75,12 @@ namespace PIMSim.PIM
             item_stage3.set_link(ref pipeline[1]);
             pipeline[2] = item_stage3 as Stage;
 
-
             //********************************************************
             //**                                                    **
-            //**       Stage 86:     Write results back              **
+            //**       Stage 4:     Write results back              **
             //**                                                    **
             //********************************************************
-            var item_stage4 = new PIMStage_Store(this, latency_store);
+            var item_stage4 = new PIMStage_Store(this, 3);
             item_stage4.set_link(ref pipeline[2]);
             pipeline[3] = item_stage4 as Stage;
 
@@ -91,11 +92,25 @@ namespace PIMSim.PIM
 
         private void handle_write_callback(CallBackInfo callback)
         {
+            if (callback != null)
+            {
+                foreach (var id in callback.stage_id)
+                {
+                    pipeline[id].status = Status.Complete;
+                }
+            }
             bandwidth_bit += 64;
         }
 
         private void handle_read_callback(CallBackInfo callback)
         {
+            if (callback != null)
+            {
+                foreach (var id in callback.stage_id)
+                {
+                    pipeline[id].status = Status.Complete;
+                }
+            }
             bandwidth_bit += 64;
         }
 
@@ -115,10 +130,12 @@ namespace PIMSim.PIM
                     bandwidth_bit += curr.Length();
                     pipeline[0].set_input(curr.input[0]);
                     pipeline[1].set_input(curr.input[1]);
+                    (pipeline[3] as PIMStage_Store).store_addr = curr.output[0];
+                    total_latency += curr.latency;
                 }
 
             }
-            bool final= false;
+            bool final = false;
             for (int i = pipeline.Count() - 1; i >= 0; i--)
             {
 
@@ -135,7 +152,7 @@ namespace PIMSim.PIM
                     {
                         if (curr != null)
                         {
-                            object addr = NULL;
+
 
                             if (Coherence.consistency == Consistency.SpinLock)
                             {
@@ -144,7 +161,7 @@ namespace PIMSim.PIM
                                 Coherence.spin_lock.relese_lock(curr.output[0]);
 
                             }
-                            pipeline[i].get_output(ref addr);
+                            pipeline[i].get_output();
 
                             total_latency += GlobalTimer.tick - curr.servetime;
 
@@ -152,6 +169,7 @@ namespace PIMSim.PIM
                         }
                     }
                 }
+
             }
             if (final)
             {

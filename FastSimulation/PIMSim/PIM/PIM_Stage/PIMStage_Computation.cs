@@ -60,7 +60,7 @@ namespace PIMSim.PIM
         {
             stall = false;
             set_input(null);
-            if (read_input())
+            if ((read_input()) || (latency.countStarted))//read input is only true once, adding count started should allow it to run multiple times
             {
                 latency.WaitOne();
                 if (latency.Zero)
